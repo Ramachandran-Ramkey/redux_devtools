@@ -1,0 +1,43 @@
+{
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.24.9",
+    "@babel/eslint-parser": "^7.24.8",
+    "@changesets/cli": "^2.27.7",
+    "@nrwl/nx-cloud": "^19.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.16.1",
+    "@typescript-eslint/parser": "^7.16.1",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jest": "^28.6.0",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "jest": "^29.7.0",
+    "nx": "^19.5.1",
+    "prettier": "3.3.3",
+    "typescript": "~5.5.3"
+  },
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "build:all": "nx run-many --target=build --all --parallel=1",
+    "lint:all": "nx run-many --target=lint --all --parallel=1",
+    "test:all": "nx run-many --target=test --all --parallel=1",
+    "clean:all": "nx run-many --target=clean --all --parallel=1",
+    "release": "pnpm build:all && changeset publish"
+  },
+  "workspaces": [
+    "extension",
+    "packages/*",
+    "packages/d3-state-visualizer/examples/tree",
+    "packages/react-dock/demo",
+    "packages/react-json-tree/examples",
+    "packages/redux-devtools/examples/counter",
+    "packages/redux-devtools/examples/todomvc",
+    "packages/redux-devtools-inspector-monitor/demo",
+    "packages/redux-devtools-inspector-monitor-test-tab/demo",
+    "packages/redux-devtools-rtk-query-monitor/demo",
+    "packages/redux-devtools-slider-monitor/examples/todomvc"
+  ],
+  "packageManager": "pnpm@8.15.9"
+}

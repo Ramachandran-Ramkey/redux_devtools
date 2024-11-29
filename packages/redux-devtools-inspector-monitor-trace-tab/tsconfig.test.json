@@ -1,0 +1,7 @@
+{
+  "extends": "../../tsconfig.react.base.json",
+  "compilerOptions": {
+    "types": ["jest", "node", "chrome"]
+  },
+  "include": ["src", "test"]
+}

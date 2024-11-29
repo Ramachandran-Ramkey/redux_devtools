@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.react.base.json",
+  "compilerOptions": {
+    "outDir": "lib/types",
+    "resolveJsonModule": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react",
+    "stripInternal": true
+  },
+  "include": ["src"]
+}

@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toolbar renders correctly 1`] = `
+<div
+  class="sc-jEACwC kawwwh"
+>
+  <div
+    class="sc-dcJsrY dAhqLr"
+  >
+    <button
+      class="sc-eqUAAy fNGiZB"
+    >
+      1
+    </button>
+  </div>
+  <div
+    class="sc-cPiKLX jaimvX"
+  />
+  <div
+    class="sc-dLMFU crJLZZ"
+  />
+  <div
+    class="sc-dcJsrY dAhqLr"
+  >
+    <button
+      class="sc-eqUAAy fNGiZB"
+    >
+      2
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Toolbar renders with props 1`] = `
+<div
+  class="sc-jEACwC hdWhho"
+/>
+`;
